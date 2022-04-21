@@ -3,7 +3,9 @@ import mongoose from 'mongoose';
 import Logging from './src/library/logging';
 import MiddlewareLogger from './src/middleware/middlewareLogger';
 import userRouters from './src/routers/user';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
 
 const MONGO_URI = 'mongodb://127.0.0.1:27017/new-database?retryWrites=true&w=majority';

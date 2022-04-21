@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/all', controller.controllerUserReadAll);
 router.get('/find/:username', controller.controllerUserReadNAme);
-// router.get('/find/:userId', controller.controllerReadUser);
-router.post('/create', controller.controllerUserCreate);
+router.post('/signup', controller.controllerSignup);
+router.post('/signin', controller.controllerSignin);
 
 export = router;
